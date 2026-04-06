@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Typing App</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="box">
+        <div class="top_part">
+            <div class="title_part">
+                <h2>Typing Test</h2>
+                <div class="sound">
+                    <label for="soundToggle">Key Sound ON/OFF</label>
+                    <input type="checkbox" id="soundToggle" />
+                </div>
+            </div>
+            <hr />
+            <div class="type_content">
+                <input type="text" id="typeValue" placeholder="Start typing..." aria-label="Typing input" autofocus />
+                <p id="displayText"></p>
+            </div>
+        </div>
+        <div class="bottom_part">
+            <p class="t-left">Time Left: <span id="timeLeft">60</span>s</p>
+            <p class="error">Mistakes: <span id="mistakes">0</span></p>
+            <p class="wpm">WPM: <span id="wpm">0</span></p>
+            <p class="cpm">CPM: <span id="cpm">0</span></p>
+            <button id="restartBtn">Try Again</button>
+        </div>
+    </div>
+    <script src="pera.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
